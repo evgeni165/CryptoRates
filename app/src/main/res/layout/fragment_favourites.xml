@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".favourites">
+
+    <TextView
+        android:id="@+id/favourites_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Избранное"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableFavourites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_marginTop="70dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="№"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="11sp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Название"
+                android:textStyle="bold"
+                android:textSize="11sp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Цена"
+                android:textStyle="bold"
+                android:textSize="11sp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Изменение, USD"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:paddingRight="5dp" />
+
+            <TextView
+                android:gravity="center"
+                android:text="Изменение, %"
+                android:textStyle="bold"
+                android:textSize="11sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/no_fav_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:gravity="center"
+        android:text="Нет избранных криптовалют.\nВы можете добавить их в разделе &quot;Криптовалюты&quot;."
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

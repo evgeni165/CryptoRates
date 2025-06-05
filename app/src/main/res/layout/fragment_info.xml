@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Информация о приложении"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/info_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Что такое криптовалюты?"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_title" />
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="\t\tКриптовалюты – это цифровые активы, работающие на технологии блокчейн. Они децентрализованы, а их стоимость определяется спросом и предложением.\n\t\tСамые известные криптовалюты:\n
+\t\t• Bitcoin (BTC) – первая и самая капитализированная криптовалюта.\n\n
+\t\t• Ethereum (ETH) – платформа для смарт-контрактов и децентрализованных приложений.\n\n
+\t\t• Binance Coin (BNB), Solana (SOL), Ripple (XRP) – популярные альткоины с разными use-cases.\n\n
+\t\tКрипторынок волатилен, и его мониторинг помогает принимать осознанные инвестиционные решения."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_head" />
+
+        <TextView
+            android:id="@+id/info_head2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="О приложении"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_text" />
+
+        <TextView
+            android:id="@+id/info_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="\t\tCryptoRates – это удобное приложение для отслеживания курсов криптовалют в реальном времени. Здесь вы можете быстро проверить актуальные цены, конвертировать криптовалюты в фиатные деньги, сохранять избранные активы и следить за самыми популярными монетами."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_head2" />
+
+        <TextView
+            android:id="@+id/info_head3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Разделы приложения"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_text2" />
+
+        <TextView
+            android:id="@+id/info_text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:justificationMode="inter_word"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="\t\t1. Криптовалюты – главная страница приложения, здесь отображаются актуальные курсы наиболее популярных криптовалют. Нажмите на процентное изменение цены, чтобы переключить режим отображения на изменение цены в конкретной сумме. Также на этой странице можно добавить понравившиеся валюты в избранное – просто нажмите на значок сердца рядом с названием монеты.\n\n
+\t\t2. Конвертер – страница для перевода суммы из одной криптовалюты в другую. Отображается также перевод в фиатные валюты: доллары и рубли.\n\n
+\t\t3. Избранное – раздел для быстрого просмотра сохраненных криптовалют. Здесь в виде таблицы показывается сразу вся информация о монете, без необходимости искать ее в списке и нажимать на изменение цены.\n\n
+\t\t4. Топ – на этой странице располагается рейтинг монет по процентному изменению цены за 24 часа.\n\n
+\t\t5. Инфо – страница с краткой информацией о криптовалютах и приложении."
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_head3" />
+
+        <TextView
+            android:id="@+id/info_head4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Ссылки"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_text3" />
+
+        <TextView
+            android:id="@+id/info_text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="150dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:justificationMode="inter_word"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:text="\t\tСсылка на GitHub репозиторий с полным исходным кодом приложения: https://github.com/evgeni165/CryptoRates"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info_head4"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+</ScrollView>

@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CryptoRates" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="bottomNavigationStyle">@style/Widget.CryptoRates.BottomNavigationView</item>
+    </style>
+
+    <style name="Widget.CryptoRates.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemTextAppearanceActive">@style/TextAppearance.CryptoRates.BottomNavigation</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.CryptoRates.BottomNavigation</item>
+    </style>
+
+    <style name="TextAppearance.CryptoRates.BottomNavigation" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Theme.CryptoRates" parent="Base.Theme.CryptoRates" />
+</resources>

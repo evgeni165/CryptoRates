@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cryptocurrencies"
+        android:title="Криптовалюты"
+        android:icon="@drawable/ic_cryptocurrencies"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/converter"
+        android:icon="@drawable/ic_converter"
+        android:title="Конвертер"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/favourites"
+        android:icon="@drawable/ic_heart"
+        android:title="Избранное"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/top"
+        android:icon="@drawable/ic_top"
+        android:title="Топ"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/info"
+        android:icon="@drawable/ic_info"
+        android:title="Инфо"
+        android:checkable="true" />
+</menu>
